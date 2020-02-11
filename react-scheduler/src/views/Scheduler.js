@@ -31,7 +31,8 @@ function Scheduler(props) {
     return (
 
         <div className="container">
-            <div className="item" >  <input type="text" className="inputWithIcon" placeholder="00:00" value={item.time} onChange={(e) => changeTime(e.target.value)} />
+            <div className="item" >
+                <input type="text" className="inputWithIcon" placeholder="00:00" value={item.time} onChange={(e) => changeTime(e.target.value)} />
                 <FaCalendarAlt className="listIcon calenderIcon" size="24" />
             </div>
             <div className="item" >

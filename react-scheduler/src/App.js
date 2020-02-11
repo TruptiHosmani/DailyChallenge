@@ -10,21 +10,20 @@ function App() {
 
   const [isCalenderDivVisible, toggleCalenderDiv] = useState(false)
   const [list, setList] = useState([
-    { id: 1, name: 'Branding Research', date: '', time: "0.50", type: "important" },
-    { id: 2, name: 'Email Template Design', date: '', time: "0.00", type: "important" },
-    { id: 3, name: 'Artwork Poster', date: '', time: "0.20", type: "mid" },
-    { id: 4, name: 'Design Homepage', date: '', time: "0.10", type: "mid" },
-    { id: 5, name: 'Photoshop Prep', date: '', time: "0.01", type: "normal" },
-    { id: 6, name: 'Design Work', date: '', time: "0.01", type: "normal" },
-    { id: 7, name: 'Design Dashboard', date: '', time: "0.10", type: "mid" },
-    { id: 8, name: 'Development Work', date: '', time: "0.00", type: "normal" }])
+    { id: 1, name: 'Branding Research', date: '', time: "00.50", type: "important" },
+    { id: 2, name: 'Email Template Design', date: '', time: "00.00", type: "important" },
+    { id: 3, name: 'Artwork Poster', date: '', time: "00.20", type: "mid" },
+    { id: 4, name: 'Design Homepage', date: '', time: "00.10", type: "mid" },
+    { id: 5, name: 'Photoshop Prep', date: '', time: "00.01", type: "normal" },
+    { id: 6, name: 'Design Work', date: '', time: "00.01", type: "normal" },
+    { id: 7, name: 'Design Dashboard', date: '', time: "00.10", type: "mid" },
+    { id: 8, name: 'Development Work', date: '', time: "00.00", type: "normal" }])
 
   const [isListDivVisible, toggleListDiv] = useState(false)
 
   const [date, setDate] = useState(new Date())
   const handleSelectTask = (item) => {
     setItem(item)
-    console.log(item)
     toggleListDiv(!isListDivVisible)
   }
   const openAddTime = () => {
@@ -60,7 +59,7 @@ function App() {
 
         </div>
         <div className="item" >
-          <Timer time={item.time} />
+          <Timer time={item.time || ""} />
         </div>
         <div className="item" >
           <input type="text" className="inputWithIcon" value={dateValue} placeholder="Add time" onChange={openAddTime} onFocus={openAddTime} />
