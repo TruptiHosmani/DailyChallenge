@@ -13,7 +13,7 @@ function Scheduler(props) {
         if (item.name) {
             const ele = list.filter(ele => { return item.name === ele.name })
             const rest = list.filter(ele => { return item.name !== ele.name })
-            ele[0].date = date.toISOString().slice(0, 10);
+            ele[0].date = date
             setList([...rest, ele[0]])
 
         }

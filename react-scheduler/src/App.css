@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vmin;
+  background-color: rgb(80,137,188);
+  padding:40px
 }
 
 .App-logo {
@@ -122,11 +125,14 @@ input:focus{
   border: none;
   border-radius: 5px;
   color: white;
-  padding:15px;
+  padding:15px 50px;
+  margin-right: 55px;
   font-size: 16px;
 }
 .red{
   background-color:rgb(228,36,57) ;
+  padding:  20px;
+  margin-right: 0;
 }
 
 .react-calendar__navigation button:enabled, .react-calendar__navigation button:enabled  {
@@ -152,7 +158,7 @@ input:focus{
   background-color:rgb(20,28,40) ;
   min-height:400px;
   position: fixed;
-  top: 10px;
+  top: 90px;
   right:20%;
   z-index: 1;
 }
@@ -181,7 +187,8 @@ li{
   font-size: 14px;
   text-align: left;
   padding: 10px 5px;
-  border-bottom:1px solid rgb(51, 57, 71)
+  border-bottom:1px solid rgb(51, 57, 71);
+  cursor: pointer;
 }
 li:last-child  { border-bottom: none; }
 
@@ -252,6 +259,9 @@ ul li.normal:before { /* the custom styled bullets */
   background-color: green;
 }
 
+ul li label{
+  cursor: pointer;
+}
 .hr-strike{
   margin: -10px auto;
     width: 85%;
@@ -284,9 +294,15 @@ ul li.normal:before { /* the custom styled bullets */
 
 .calenderIcon{
   border-radius: 5px;
-    margin: 5px;
-    padding: 7px;
+    margin: 10px 0px;
+    padding: 10px;
     background-color: #333847;
     cursor: pointer;
 
 }
+
+small{
+  padding-left: 20px;
+  font-size: 12px;
+}
+
