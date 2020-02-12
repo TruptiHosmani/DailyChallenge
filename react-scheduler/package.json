@@ -9,6 +9,7 @@
     "moment": "^2.24.0",
     "react": "^16.12.0",
     "react-calendar": "^2.19.2",
+    "react-circle": "^1.1.1",
     "react-countdown-circle-timer": "^1.1.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.9.0",
