@@ -5,7 +5,7 @@ import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 import Recipes from './views/Recipes'
 import AddRecipe from './views/AddRecipe'
-import { Container, Row } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 
 const client = new ApolloClient({
@@ -16,12 +16,15 @@ function App() {
   return (
     <ApolloProvider client={client} >
       <Container>
+
         <Row className="justify-content-md-center">
-          <AddRecipe />
-        </Row>
-        <hr />
-        <Row className="justify-content-md-center">
-          <Recipes />
+          <Col></Col>
+          <Col xs={6}>
+            <AddRecipe />
+            <hr />
+            <Recipes />
+          </Col>
+          <Col></Col>
         </Row>
       </Container>
     </ApolloProvider >
