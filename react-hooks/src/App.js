@@ -4,7 +4,8 @@ import './App.css';
 import Counter from './views/Counter'
 import Todo from './views/Todo'
 import Store from './Store'
-
+import Fruit from './views/Fruit'
+import SecondFruit from './views/SecondFruit'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 function App() {
   return (
@@ -16,15 +17,20 @@ function App() {
               <Card.Body>
                 <Counter />
               </Card.Body>
-
-
             </Card>
 
 
             <Card>
               <Card.Body>
                 <Todo />
+              </Card.Body>
+            </Card>
 
+
+            <Card>
+              <Card.Body>
+                <Fruit />
+                <SecondFruit />
               </Card.Body>
             </Card>
           </Col>
