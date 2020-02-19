@@ -6,6 +6,7 @@ import Todo from './views/Todo'
 import Store from './Store'
 import Fruit from './views/Fruit'
 import SecondFruit from './views/SecondFruit'
+import Posts from './views/Posts'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
               </Card.Body>
             </Card>
 
+            <Card>
+              <Card.Body>
+                <Posts />
+              </Card.Body>
+            </Card>
 
             <Card>
               <Card.Body>
